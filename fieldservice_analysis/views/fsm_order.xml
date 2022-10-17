@@ -1,0 +1,27 @@
+<odoo>
+    <record id="view_fsm_order_form_inherit_stock_analysis" model="ir.ui.view">
+        <field name="name">fsm.order.form.stock.analysis</field>
+        <field name="model">fsm.order</field>
+        <field name="inherit_id" ref="fieldservice.fsm_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='execution_page']" position="after">
+                <page string="Analysis" name="execution_page">
+                    <group>
+                        <group id="planned">
+                            <field name="planned_revenue"/>
+                            <field name="planned_cost"/>
+                            <field name="planned_profit"/>
+                            <field name="planned_margin"/>
+                        </group>
+                        <group id="actual">
+                            <field name="actual_revenue"/>
+                            <field name="actual_cost"/>
+                            <field name="actual_profit"/>
+                            <field name="actual_margin"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
