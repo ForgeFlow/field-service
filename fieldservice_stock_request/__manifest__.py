@@ -21,6 +21,7 @@
         "views/stock.xml",
         "views/stock_request.xml",
         "views/stock_request_order.xml",
+        "views/fsm_template.xml",
     ],
     "license": "AGPL-3",
     "development_status": "Beta",
